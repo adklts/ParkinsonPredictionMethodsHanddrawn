@@ -1,0 +1,73 @@
+Individual,InferredClasses
+V01HE02,Measurement; SignalEntropyHigh; WaveEnergyMedium; SmoothnessMedium
+V01HE03,Measurement; SignalEntropyHigh; WaveEnergyMedium; SmoothnessMedium
+V01PE02,Measurement; SignalEntropyMedium; SignalEntropyHigh; WaveEnergyMedium; SmoothnessMedium; SmoothnessLow
+V01PE03,Measurement; SignalEntropyLow; WaveEnergyLow; WaveEnergyMedium; SmoothnessLow
+V02HE02,Measurement; SignalEntropyHigh; WaveEnergyHigh; SmoothnessLow
+V02HE03,Measurement; SignalEntropyHigh; WaveEnergyHigh; SmoothnessLow
+V02PE02,Measurement; SignalEntropyLow; WaveEnergyHigh; SmoothnessLow
+V02PE03,Measurement; SignalEntropyLow; WaveEnergyHigh; SmoothnessLow
+V03HE2,Measurement; SignalEntropyHigh; WaveEnergyMedium; SmoothnessMedium; SmoothnessLow
+V03HE3,Measurement; SignalEntropyLow; WaveEnergyHigh; SmoothnessLow
+V03PE02,Measurement; SignalEntropyHigh; WaveEnergyMedium; SmoothnessMedium
+V03PE03,Measurement; SignalEntropyLow; WaveEnergyMedium; SmoothnessMedium
+V03PE05,Measurement; SignalEntropyLow; WaveEnergyHigh; WaveEnergyMedium; SmoothnessMedium
+V03PE06,Measurement; SignalEntropyMedium; WaveEnergyHigh; WaveEnergyMedium; SmoothnessMedium
+V03PE08,Measurement; SignalEntropyLow; WaveEnergyLow; SmoothnessHigh
+V03PE09,Measurement; SignalEntropyHigh; WaveEnergyHigh; WaveEnergyMedium; SmoothnessLow
+V04HE02,Measurement; SignalEntropyLow; WaveEnergyLow; SmoothnessHigh; SmoothnessMedium
+V04HE03,Measurement; SignalEntropyLow; WaveEnergyLow; SmoothnessMedium
+V04PE02,Measurement; SignalEntropyHigh; WaveEnergyHigh; SmoothnessLow
+V04PE03,Measurement; SignalEntropyMedium; WaveEnergyHigh; SmoothnessLow
+V05HE02,Measurement; SignalEntropyLow; WaveEnergyLow
+V05HE03,Measurement; SignalEntropyMedium; WaveEnergyLow; SmoothnessHigh
+V05PE02,Measurement; SignalEntropyHigh; WaveEnergyHigh; SmoothnessLow
+V05PE03,Measurement; SignalEntropyMedium; WaveEnergyHigh; SmoothnessLow
+V06HE02,Measurement; SignalEntropyLow; WaveEnergyLow; WaveEnergyMedium; SmoothnessHigh
+V06HE03,Measurement; SignalEntropyLow; WaveEnergyLow; WaveEnergyMedium; SmoothnessHigh
+V06PE02,Measurement; SignalEntropyHigh; WaveEnergyLow; SmoothnessMedium
+V06PE03,Measurement; SignalEntropyMedium; WaveEnergyLow; SmoothnessHigh
+V07HE02,Measurement; SignalEntropyHigh; WaveEnergyMedium; SmoothnessMedium
+V07HE03,Measurement; SignalEntropyHigh; WaveEnergyHigh; WaveEnergyMedium; SmoothnessLow
+V07PE02,Measurement; SignalEntropyLow; WaveEnergyLow; SmoothnessHigh
+V07PE03,Measurement; SignalEntropyLow; WaveEnergyMedium; SmoothnessMedium
+V08HE02,Measurement; SignalEntropyMedium; WaveEnergyLow; SmoothnessHigh
+V08HE03,Measurement; SignalEntropyHigh; WaveEnergyLow; SmoothnessHigh
+V08PE02,Measurement; SignalEntropyMedium; SignalEntropyHigh; WaveEnergyHigh; SmoothnessLow
+V08PE03,Measurement; SignalEntropyHigh; WaveEnergyMedium; SmoothnessLow
+V09HE02,Measurement; SignalEntropyLow; WaveEnergyLow; SmoothnessHigh
+V09HE03,Measurement; SignalEntropyHigh; WaveEnergyLow; SmoothnessHigh
+V09PE02,Measurement; SignalEntropyMedium; SignalEntropyHigh; WaveEnergyHigh; SmoothnessLow
+V09PE03,Measurement; SignalEntropyLow; WaveEnergyMedium; SmoothnessMedium
+V10HE02,Measurement; SignalEntropyMedium; SignalEntropyLow; WaveEnergyLow; SmoothnessHigh
+V10HE03,Measurement; SignalEntropyHigh; WaveEnergyMedium; SmoothnessMedium
+V10PE01,Measurement; SignalEntropyLow; WaveEnergyLow; SmoothnessHigh
+V10PE02,Measurement; SignalEntropyMedium; WaveEnergyLow; WaveEnergyMedium; SmoothnessHigh
+V11HE02,Measurement; SignalEntropyMedium; SignalEntropyLow; WaveEnergyLow; SmoothnessHigh; SmoothnessMedium
+V11HE03,Measurement; SignalEntropyLow; WaveEnergyHigh; SmoothnessLow
+V11PE01,Measurement; SignalEntropyMedium; SignalEntropyLow; WaveEnergyMedium; SmoothnessMedium
+V11PE02,Measurement; SignalEntropyMedium; WaveEnergyHigh; SmoothnessLow
+V12HE01,Measurement; SignalEntropyHigh; WaveEnergyMedium; SmoothnessMedium
+V12HE02,Measurement; SignalEntropyMedium; SignalEntropyHigh; WaveEnergyHigh; WaveEnergyMedium; SmoothnessLow
+V12HE03,Measurement; SignalEntropyHigh; WaveEnergyMedium; SmoothnessMedium
+V12PE01,Measurement; SignalEntropyLow; WaveEnergyLow; SmoothnessHigh
+V12PE02,Measurement; SignalEntropyHigh; WaveEnergyMedium; SmoothnessMedium
+V12PE03,Measurement; SignalEntropyHigh; WaveEnergyHigh; SmoothnessLow
+V13PE01,Measurement; SignalEntropyHigh; WaveEnergyLow; SmoothnessHigh
+V13PE02,Measurement; SignalEntropyHigh; WaveEnergyLow; SmoothnessHigh
+V13PE03,Measurement; SignalEntropyHigh; WaveEnergyLow; SmoothnessHigh; SmoothnessMedium
+V14PE01,Measurement; SignalEntropyLow; SmoothnessLow
+V14PE02,Measurement; SignalEntropyLow; WaveEnergyHigh; SmoothnessLow
+V15PE02,Measurement; SignalEntropyHigh; WaveEnergyHigh; SmoothnessLow
+V15PE03,Measurement; SignalEntropyHigh; WaveEnergyHigh; SmoothnessLow
+V55HE01,Measurement; SignalEntropyHigh; WaveEnergyLow; SmoothnessHigh
+V55HE02,Measurement; SignalEntropyHigh; WaveEnergyLow; SmoothnessHigh
+V55HE03,Measurement; SignalEntropyMedium; WaveEnergyMedium; SmoothnessMedium
+V55HE04,Measurement; SignalEntropyHigh; WaveEnergyLow; WaveEnergyMedium; SmoothnessMedium
+V55HE05,Measurement; SignalEntropyHigh; WaveEnergyLow; SmoothnessHigh
+V55HE06,Measurement; SignalEntropyLow; WaveEnergyLow; SmoothnessHigh
+V55HE07,Measurement; SignalEntropyLow; WaveEnergyLow; SmoothnessMedium
+V55HE08,Measurement; SignalEntropyMedium; WaveEnergyHigh; SmoothnessLow
+V55HE09,Measurement; SignalEntropyHigh; WaveEnergyHigh; SmoothnessLow
+V55HE10,Measurement; SignalEntropyHigh; WaveEnergyLow; WaveEnergyMedium; SmoothnessMedium
+V55HE11,Measurement; SignalEntropyLow; WaveEnergyLow; SmoothnessHigh
