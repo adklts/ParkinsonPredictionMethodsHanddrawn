@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1748365735978" name="http://www.semanticweb.org/adklts/ontologies/2024/10/untitled-ontology-32" uri="PhDTestv14StatisSpiralDLFuzzy.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1748365735978" name="http://www.semanticweb.org/adklts/ontologies/2024/11/untitled-ontology-43" uri="PhDTestv14StaticSpiral.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1748365735978" name="http://www.semanticweb.org/adklts/ontologies/2025/4/FSPHD" uri="FSPHD.owl"/>
-    </group>
-</catalog>
