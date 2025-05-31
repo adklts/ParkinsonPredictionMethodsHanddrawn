@@ -1,0 +1,38 @@
+Healthy
+hasAverageAmplitudeHigh(?m), hasSignalEntropyMedium(?m), hasKurtosisLow(?m), hasMeasurement(?x, ?m) -> HealthyStatusMedium(?x)done
+hasAverageAmplitudeHigh(?m), hasSignalEntropyHigh(?m), hasKurtosisLow(?m), hasMeasurement(?x, ?m) -> HealthyStatusHigh(?x)done
+hasAverageAmplitudeLow(?m), hasSignalEntropyHigh(?m), hasKurtosisLow(?m), hasMeasurement(?x, ?m) -> HealthyStatusMedium(?x)done
+hasAverageAmplitudeMedium(?m), hasSignalEntropyHigh(?m), hasKurtosisLow(?m), hasMeasurement(?x, ?m) -> HealthyStatusHigh(?x)done
+hasAverageAmplitudeLow(?m), hasSignalEntropyHigh(?m), hasKurtosisMedium(?m), hasMeasurement(?x, ?m) -> HealthyStatusMedium(?x)done
+hasAverageAmplitudeMedium(?m), hasSignalEntropyMedium(?m), hasKurtosisMedium(?m), hasMeasurement(?x, ?m) -> HealthyStatusMedium(?x)done
+hasAverageAmplitudeHigh(?m), hasSignalEntropyMedium(?m), hasKurtosisMedium(?m), hasMeasurement(?x, ?m) -> HealthyStatusMedium(?x)done
+hasAverageAmplitudeMedium(?m), hasSignalEntropyMedium(?m), hasKurtosisLow(?m), hasMeasurement(?x, ?m) -> HealthyStatusLow(?x)done
+hasAverageAmplitudeHigh(?m), hasSignalEntropyLow(?m), hasKurtosisHigh(?m), hasMeasurement(?x, ?m) -> HealthyStatusLow(?x)done
+hasAverageAmplitudeMedium(?m), hasSignalEntropyLow(?m), hasKurtosisHigh(?m), hasMeasurement(?x, ?m) -> HealthyStatusLow(?x)done
+hasAverageAmplitudeHigh(?m), hasSignalEntropyLow(?m), hasKurtosisMedium(?m), hasMeasurement(?x, ?m) -> HealthyStatusLow(?x)done
+hasAverageAmplitudeHigh(?m), hasSignalEntropyMedium(?m), hasKurtosisHigh(?m), hasMeasurement(?x, ?m) -> HealthyStatusLow(?x)done
+Parkinsonian
+hasAverageAmplitudeLow(?m), hasSignalEntropyLow(?m), hasKurtosisHigh(?m), hasMeasurement(?x, ?m) -> ParkinsonianSeverityHigh(?x)done
+
+hasAverageAmplitudeMedium(?m), hasSignalEntropyLow(?m), hasKurtosisHigh(?m), hasMeasurement(?x, ?m) -> ParkinsonianSeverityHigh(?x)done
+
+hasAverageAmplitudeLow(?m), hasSignalEntropyHigh(?m), hasKurtosisLow(?m), hasMeasurement(?x, ?m) -> ParkinsonianSeverityLow(?x)done
+
+hasAverageAmplitudeHigh(?m), hasSignalEntropyMedium(?m), hasKurtosisMedium(?m), hasMeasurement(?x, ?m) -> ParkinsonianSeverityMedium(?x)done
+
+hasAverageAmplitudeMedium(?m), hasSignalEntropyLow(?m), hasKurtosisMedium(?m), hasMeasurement(?x, ?m) -> ParkinsonianSeverityMedium(?x)done
+hasAverageAmplitudeHigh(?m), hasSignalEntropyMedium(?m), hasKurtosisHigh(?m), hasMeasurement(?x, ?m) -> ParkinsonianSeverityMedium(?x)done
+hasAverageAmplitudeHigh(?m), hasSignalEntropyLow(?m), hasKurtosisHigh(?m), hasMeasurement(?x, ?m) -> ParkinsonianSeverityMedium(?x)done
+hasAverageAmplitudeHigh(?m), hasSignalEntropyLow(?m), hasKurtosisMedium(?m), hasMeasurement(?x, ?m) -> ParkinsonianSeverityMedium(?x)done
+hasAverageAmplitudeHigh(?m), hasSignalEntropyMedium(?m), hasKurtosisLow(?m), hasMeasurement(?x, ?m) -> ParkinsonianSeverityLow(?x)done
+hasAverageAmplitudeLow(?m), hasSignalEntropyHigh(?m), hasKurtosisHigh(?m), hasMeasurement(?x, ?m) -> ParkinsonianSeverityHigh(?x)done
+hasAverageAmplitudeMedium(?m), hasSignalEntropyMedium(?m), hasKurtosisLow(?m), hasMeasurement(?x, ?m) -> ParkinsonianSeverityLow(?x)done
+hasAverageAmplitudeMedium(?m), hasSignalEntropyMedium(?m), hasKurtosisHigh(?m), hasMeasurement(?x, ?m) -> ParkinsonianSeverityMedium(?x)done
+hasAverageAmplitudeLow(?m), hasSignalEntropyMedium(?m), hasKurtosisHigh(?m), hasMeasurement(?x, ?m) -> ParkinsonianSeverityHigh(?x)done
+hasAverageAmplitudeHigh(?m), hasSignalEntropyHigh(?m), hasKurtosisLow(?m), hasMeasurement(?x, ?m) -> ParkinsonianSeverityLow(?x)done
+hasAverageAmplitudeMedium(?m), hasSignalEntropyHigh(?m), hasKurtosisLow(?m), hasMeasurement(?x, ?m) -> ParkinsonianSeverityLow(?x)done
+hasAverageAmplitudeLow(?m), hasSignalEntropyMedium(?m), hasKurtosisMedium(?m), hasMeasurement(?x, ?m) -> ParkinsonianSeverityMedium(?x)done
+hasAverageAmplitudeLow(?m), hasSignalEntropyLow(?m), hasKurtosisLow(?m), hasMeasurement(?x, ?m) -> ParkinsonianSeverityMedium(?x)done
+hasAverageAmplitudeLow(?m), hasSignalEntropyHigh(?m), hasKurtosisMedium(?m), hasMeasurement(?x, ?m) -> ParkinsonianSeverityMedium(?x)done
+hasAverageAmplitudeMedium(?m), hasSignalEntropyMedium(?m), hasKurtosisMedium(?m), hasMeasurement(?x, ?m) -> ParkinsonianSeverityMedium(?x)done
+

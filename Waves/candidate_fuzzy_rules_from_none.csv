@@ -1,0 +1,19 @@
+Average Amplitude Level,Signal Entropy Level,Kurtosis Level,Count,Group
+High,Medium,Low,5,Healthy
+Low,High,Medium,5,Healthy
+High,Low,High,3,Healthy
+Low,High,Low,3,Healthy
+High,Low,Medium,2,Healthy
+High,Medium,High,2,Healthy
+High,High,Medium,1,Healthy
+High,Medium,Medium,1,Healthy
+Medium,High,Medium,1,Healthy
+High,Medium,High,4,Parkinsonian
+Low,High,Low,3,Parkinsonian
+High,Low,Medium,2,Parkinsonian
+High,Medium,Low,2,Parkinsonian
+High,Medium,Medium,2,Parkinsonian
+Low,High,High,2,Parkinsonian
+High,Low,High,1,Parkinsonian
+Low,High,Medium,1,Parkinsonian
+Medium,High,Medium,1,Parkinsonian

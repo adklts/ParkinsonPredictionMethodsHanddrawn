@@ -1,0 +1,4065 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY FWP "http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#"
+     xml:base="http://www.semanticweb.org/adklts/ontologies/2025/3/FWP"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:FWP="http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/adklts/ontologies/2025/3/FWP"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#fuzzyLabel -->
+
+    <owl:AnnotationProperty rdf:about="&FWP;fuzzyLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#FuzzyKurtosisHigh -->
+
+    <rdfs:Datatype rdf:about="&FWP;FuzzyKurtosisHigh">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">-1.0855</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">-0.564</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;triangular&quot; a=&quot;-1.089635 &quot; b=&quot;-0.981657&quot; c=&quot;-0.563756&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#FuzzyKurtosisLow -->
+
+    <rdfs:Datatype rdf:about="&FWP;FuzzyKurtosisLow">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">-1.321</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">-1.167</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;triangular&quot; a=&quot;-1.318914&quot; b=&quot;-1.238854&quot; c=&quot;-1.160034&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#FuzzyKurtosisMedium -->
+
+    <rdfs:Datatype rdf:about="&FWP;FuzzyKurtosisMedium">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">-1.185</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">-1.059</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;triangular&quot; a=&quot;-1.178301&quot; b=&quot;-1.129060&quot; c=&quot;-1.067824&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#FuzzySignalEntropyHigh -->
+
+    <rdfs:Datatype rdf:about="&FWP;FuzzySignalEntropyHigh">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">2.28</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">2.3</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;triangular&quot; a=&quot;2.282196&quot; b=&quot;2.291570&quot; c=&quot;2.301314&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#FuzzySignalEntropyLow -->
+
+    <rdfs:Datatype rdf:about="&FWP;FuzzySignalEntropyLow">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">2.14</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">2.26</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;triangular&quot; a=&quot;2.142051&quot; b=&quot;2.247265&quot; c=&quot;2.270753&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#FuzzySignalEntropyMedium -->
+
+    <rdfs:Datatype rdf:about="&FWP;FuzzySignalEntropyMedium">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">2.25</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">2.28</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;triangular&quot; a=&quot;2.265899&quot; b=&quot;2.276484&quot; c=&quot;2.284394&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#FuzzySmoothnessHigh -->
+
+    <rdfs:Datatype rdf:about="&FWP;FuzzySmoothnessHigh">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">0.036604</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">0.059681</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;triangular&quot; a=&quot;0.036604&quot; b=&quot;0.046033&quot; c=&quot;0.059681&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#FuzzySmoothnessLow -->
+
+    <rdfs:Datatype rdf:about="&FWP;FuzzySmoothnessLow">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">0.007047</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">0.027102</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;triangular&quot; a=&quot;0.007047&quot; b=&quot;0.018882&quot; c=&quot;0.027102&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#FuzzySmoothnessMedium -->
+
+    <rdfs:Datatype rdf:about="&FWP;FuzzySmoothnessMedium">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="&xsd;double">0.025078</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="&xsd;double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="&xsd;double">0.038903</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:intersectionOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+        <fuzzyLabel>&lt;fuzzyOwl2 fuzzyType=&quot;datatype&quot;&gt;
+&lt;Datatype type=&quot;triangular&quot; a=&quot;0.025078&quot; b=&quot;0.032118&quot; c=&quot;0.038903&quot; /&gt;
+&lt;/fuzzyOwl2&gt;</fuzzyLabel>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#hasMeasurement -->
+
+    <owl:ObjectProperty rdf:about="&FWP;hasMeasurement">
+        <rdfs:domain rdf:resource="&FWP;Individuals"/>
+        <rdfs:range rdf:resource="&FWP;Measurement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#hasKurtosis -->
+
+    <owl:DatatypeProperty rdf:about="&FWP;hasKurtosis">
+        <rdfs:domain rdf:resource="&FWP;Measurement"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#hasSignalEntropy -->
+
+    <owl:DatatypeProperty rdf:about="&FWP;hasSignalEntropy">
+        <rdfs:domain rdf:resource="&FWP;Measurement"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#hasSmoothness -->
+
+    <owl:DatatypeProperty rdf:about="&FWP;hasSmoothness">
+        <rdfs:domain rdf:resource="&FWP;Measurement"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#Healthy -->
+
+    <owl:Class rdf:about="&FWP;Healthy">
+        <rdfs:subClassOf rdf:resource="&FWP;Individuals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#HealthyStatusHigh -->
+
+    <owl:Class rdf:about="&FWP;HealthyStatusHigh">
+        <rdfs:subClassOf rdf:resource="&FWP;Healthy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#HealthyStatusLow -->
+
+    <owl:Class rdf:about="&FWP;HealthyStatusLow">
+        <rdfs:subClassOf rdf:resource="&FWP;Healthy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#HealthyStatusMedium -->
+
+    <owl:Class rdf:about="&FWP;HealthyStatusMedium">
+        <rdfs:subClassOf rdf:resource="&FWP;Healthy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#Individuals -->
+
+    <owl:Class rdf:about="&FWP;Individuals"/>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#KurtosisHigh -->
+
+    <owl:Class rdf:about="&FWP;KurtosisHigh">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&FWP;hasKurtosis"/>
+                <owl:someValuesFrom rdf:resource="&FWP;FuzzyKurtosisHigh"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&FWP;Measurement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#KurtosisLow -->
+
+    <owl:Class rdf:about="&FWP;KurtosisLow">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&FWP;hasKurtosis"/>
+                <owl:someValuesFrom rdf:resource="&FWP;FuzzyKurtosisLow"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&FWP;Measurement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#KurtosisMedium -->
+
+    <owl:Class rdf:about="&FWP;KurtosisMedium">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&FWP;hasKurtosis"/>
+                <owl:someValuesFrom rdf:resource="&FWP;FuzzyKurtosisMedium"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&FWP;Measurement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#Measurement -->
+
+    <owl:Class rdf:about="&FWP;Measurement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#Parkinsonian -->
+
+    <owl:Class rdf:about="&FWP;Parkinsonian">
+        <rdfs:subClassOf rdf:resource="&FWP;Individuals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#ParkinsonianSeverityHigh -->
+
+    <owl:Class rdf:about="&FWP;ParkinsonianSeverityHigh">
+        <rdfs:subClassOf rdf:resource="&FWP;Parkinsonian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#ParkinsonianSeverityLow -->
+
+    <owl:Class rdf:about="&FWP;ParkinsonianSeverityLow">
+        <rdfs:subClassOf rdf:resource="&FWP;Parkinsonian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#ParkinsonianSeverityMedium -->
+
+    <owl:Class rdf:about="&FWP;ParkinsonianSeverityMedium">
+        <rdfs:subClassOf rdf:resource="&FWP;Parkinsonian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#SignalEntropyHigh -->
+
+    <owl:Class rdf:about="&FWP;SignalEntropyHigh">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&FWP;hasSignalEntropy"/>
+                <owl:someValuesFrom rdf:resource="&FWP;FuzzySignalEntropyHigh"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&FWP;Measurement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#SignalEntropyLow -->
+
+    <owl:Class rdf:about="&FWP;SignalEntropyLow">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&FWP;hasSignalEntropy"/>
+                <owl:someValuesFrom rdf:resource="&FWP;FuzzySignalEntropyLow"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&FWP;Measurement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#SignalEntropyMedium -->
+
+    <owl:Class rdf:about="&FWP;SignalEntropyMedium">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&FWP;hasSignalEntropy"/>
+                <owl:someValuesFrom rdf:resource="&FWP;FuzzySignalEntropyMedium"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&FWP;Measurement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#SmoothnessHigh -->
+
+    <owl:Class rdf:about="&FWP;SmoothnessHigh">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&FWP;hasSmoothness"/>
+                <owl:someValuesFrom rdf:resource="&FWP;FuzzySmoothnessHigh"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&FWP;Measurement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#SmoothnessLow -->
+
+    <owl:Class rdf:about="&FWP;SmoothnessLow">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&FWP;hasSmoothness"/>
+                <owl:someValuesFrom rdf:resource="&FWP;FuzzySmoothnessLow"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&FWP;Measurement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#SmoothnessMedium -->
+
+    <owl:Class rdf:about="&FWP;SmoothnessMedium">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&FWP;hasSmoothness"/>
+                <owl:someValuesFrom rdf:resource="&FWP;FuzzySmoothnessMedium"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&FWP;Measurement"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V01HO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V01HO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V01HO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V01HO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V01HO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.1582670698875634</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0361628626915327</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.289795663624856</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V01HO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V01HO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V01HO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V01HO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V01HO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.3189138302679675</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0351343357825039</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2924064434763483</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V01PO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V01PO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V01PO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V01PO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V01PO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.154596332152462</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0243029309602012</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.257837092315329</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V01PO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V01PO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V01PO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V01PO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V01PO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-0.9663994056159736</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0128838167727532</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.260479050153013</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V02HO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V02HO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V02HO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V02HO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V02HO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.1445408759619802</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0184567063903112</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.292076741105689</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V02HO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V02HO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V02HO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V02HO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V02HO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.1189578640059148</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0169592336584444</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.297395444953662</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V02PO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V02PO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V02PO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V02PO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V02PO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-0.997884840505144</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0268580208160303</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.261571609261141</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V02PO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V02PO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V02PO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V02PO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V02PO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-0.6255381834966274</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0298690975235381</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.182197098309819</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V03HO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V03HO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V03HO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V03HO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V03HO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.1843643298632964</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0297465231817036</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2882485532135077</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V03HO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V03HO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V03HO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V03HO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V03HO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.1611039139604826</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0243636416552367</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.290214233068549</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V03PO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V03PO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V03PO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V03PO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V03PO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.0896828754456431</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0419832814772423</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2536157843315365</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V03PO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V03PO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V03PO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V03PO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V03PO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.0214330959518316</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.035296768586999</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.236381772763487</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V03PO05_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V03PO05_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V03PO05_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V03PO05_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V03PO05_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.0727139411830442</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0269881912790126</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.249954335686988</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V03PO06_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V03PO06_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V03PO06_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V03PO06_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V03PO06_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.08169959525061</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0326542072308514</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2461054054584584</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V03PO08_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V03PO08_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V03PO08_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V03PO08_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V03PO08_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-0.8859399102659968</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0221969469629529</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2467404438349647</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V03PO09_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V03PO09_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V03PO09_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V03PO09_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V03PO09_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.07526094449942</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0374060003665797</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.273696376537809</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V04HO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V04HO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V04HO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V04HO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V04HO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.228405257383951</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0434469439573918</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2811260138874125</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V04HO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V04HO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V04HO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V04HO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V04HO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.2941715153694835</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0425054841453712</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.296984973297126</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V04PO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V04PO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V04PO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V04PO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V04PO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.1053407615275113</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0393049358658559</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2439837117082915</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V04PO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V04PO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V04PO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V04PO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V04PO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.084620617197731</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0395141177650607</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2775929705787226</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V05HO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V05HO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V05HO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V05HO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V05HO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.1440261052575214</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0348066958950709</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2830246884274</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V05HO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V05HO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V05HO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V05HO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V05HO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.0898463934760008</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0438631259083102</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2484820601876647</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V05PO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V05PO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V05PO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V05PO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V05PO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.066147157023713</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0297375618738721</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.250604976760548</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V05PO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V05PO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V05PO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V05PO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V05PO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.084355077881656</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0286216390124693</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2721241361669557</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V06HO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V06HO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V06HO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V06HO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V06HO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.017084654965573</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0388163987184051</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.259007557025774</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V06HO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V06HO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V06HO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V06HO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V06HO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.227987501334601</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0383262574480668</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.277035293056966</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V06PO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V06PO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V06PO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V06PO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V06PO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-0.7716294067105993</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0183771230016946</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.242916191257219</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V06PO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V06PO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V06PO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V06PO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V06PO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-0.7353041824727771</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0233088957849045</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.197602963247025</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V07HO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V07HO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V07HO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V07HO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V07HO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.039604680915933</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.045547124059516</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.239705528871272</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V07HO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V07HO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V07HO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V07HO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V07HO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.3011843953097335</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0451317392531426</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2952170817623068</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V07PO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V07PO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V07PO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V07PO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V07PO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.2727220871880265</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0235851763472538</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.294663422817935</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V07PO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V07PO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V07PO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V07PO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V07PO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-0.9976459701914812</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0326528720084404</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.226954946731217</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V08HO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V08HO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V08HO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V08HO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V08HO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.1295289114425735</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0506624026120666</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2589882652209923</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V08HO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V08HO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V08HO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V08HO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V08HO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.0762529230019902</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0596164906226767</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2608695749000707</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V08PO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V08PO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V08PO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V08PO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V08PO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.0106373461080027</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.037643832780974</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.269053244779953</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V08PO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V08PO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V08PO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V08PO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V08PO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.1192083463176343</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0140946304924677</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.285604997015903</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V09HO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V09HO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V09HO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V09HO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V09HO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.2275886174193502</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0153656768638412</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2988707781587445</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V09HO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V09HO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V09HO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V09HO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V09HO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.0915980133278858</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0198207479054562</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2862056320944486</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V09PO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V09PO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V09PO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V09PO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V09PO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-0.5637564486641526</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0182635907778801</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.165634437825457</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V09PO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V09PO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V09PO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V09PO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V09PO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-0.6944455614865999</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0226271140229862</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.142051211278923</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V10HO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V10HO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V10HO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V10HO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V10HO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.2340390184739771</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0464844473885399</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2879586533617555</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V10HO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V10HO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V10HO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V10HO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V10HO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.2684587390867872</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0481159692249953</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2990470630275346</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V10PO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V10PO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V10PO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V10PO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V10PO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.1792946243121878</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0319788271277425</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2880369766127684</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V10PO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V10PO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V10PO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V10PO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V10PO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.0587903365451898</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0490817443440486</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.261296784264798</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V11HO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V11HO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V11HO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V11HO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V11HO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.1870976790318315</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0344998983056573</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2938829503391176</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V11HO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V11HO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V11HO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V11HO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V11HO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.2775220187433411</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0385555739309611</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.276324698474051</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V11PO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V11PO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V11PO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V11PO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V11PO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.1808604475301618</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0426362018655598</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2813260451518667</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V11PO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V11PO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V11PO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V11PO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V11PO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.2375412145881204</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0399556332341608</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2947183186479965</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V12HO01_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V12HO01_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V12HO01_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V12HO01_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V12HO01_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.0841410120813877</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0373714350468037</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2745632614484355</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V12HO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V12HO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V12HO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V12HO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V12HO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.1866197930473688</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0150167591983511</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2993306481193123</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V12HO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V12HO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V12HO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V12HO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V12HO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.1490640971371078</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0239436884591924</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.285284421296463</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V12PO01_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V12PO01_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V12PO01_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V12PO01_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V12PO01_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.1986980170492694</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0080931236272142</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.300679893321387</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V12PO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V12PO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V12PO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V12PO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V12PO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.05077647451907</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0208726517262293</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2888212738596367</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V12PO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V12PO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V12PO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V12PO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V12PO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-0.929050363482578</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0227831682808244</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2251005050336747</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V13PO01_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V13PO01_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V13PO01_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V13PO01_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V13PO01_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-0.9744724693268833</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0500791894287771</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.267602663067109</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V13PO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V13PO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V13PO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V13PO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V13PO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.108570561608656</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0477156664206153</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.282107570007369</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V13PO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V13PO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V13PO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V13PO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V13PO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.2563606897321091</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0532958325990328</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.277673559894849</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V14PO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V14PO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V14PO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V14PO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V14PO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.0579712943585629</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0113706211080726</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2889951311486745</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V15PO01_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V15PO01_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V15PO01_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V15PO01_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V15PO01_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.1663967044739585</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.007521520413493</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.3013141396479404</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V15PO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V15PO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V15PO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V15PO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V15PO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.1706973363983462</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0070465771631128</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.299628857188684</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V15PO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V15PO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V15PO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V15PO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V15PO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.180249087334306</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0071375059956048</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.300859177168661</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V55HO01_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V55HO01_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V55HO01_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V55HO01_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V55HO01_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.0920886259380858</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0198142322950377</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.286639260552652</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V55HO02_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V55HO02_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V55HO02_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V55HO02_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V55HO02_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.076157354028327</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0596805897194272</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.260818599093036</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V55HO03_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V55HO03_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V55HO03_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V55HO03_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V55HO03_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.1810720774587846</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0280825313674121</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2892603633456083</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V55HO04_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V55HO04_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V55HO04_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V55HO04_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V55HO04_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.0381414650114256</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0455655526007343</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.23927738781655</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V55HO05_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V55HO05_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V55HO05_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V55HO05_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V55HO05_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.2292116283187104</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0382979701463379</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.277234761299987</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V55HO06_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V55HO06_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V55HO06_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V55HO06_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V55HO06_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.1339535131216874</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.031204014261763</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.281391013887785</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V55HO07_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V55HO07_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V55HO07_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V55HO07_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V55HO07_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.141483448727368</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0348959571938168</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2831537214538398</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V55HO12_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V55HO12_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V55HO12_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V55HO12_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V55HO12_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.1839720543201129</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0150633440321823</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2991953638231544</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V55HO13_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V55HO13_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V55HO13_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V55HO13_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V55HO13_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.274807022624011</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0385946642031298</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2768055245010426</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V55HO14_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V55HO14_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V55HO14_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V55HO14_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V55HO14_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.179421858969072</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.017873519608826</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2919767487181137</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V55HO15_I -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V55HO15_I">
+        <rdf:type rdf:resource="&FWP;Individuals"/>
+        <hasMeasurement rdf:resource="&FWP;V55HO15_M"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adklts/ontologies/2025/3/FWP#V55HO15_M -->
+
+    <owl:NamedIndividual rdf:about="&FWP;V55HO15_M">
+        <rdf:type rdf:resource="&FWP;Measurement"/>
+        <hasKurtosis rdf:datatype="&xsd;double">-1.234989835736111</hasKurtosis>
+        <hasSmoothness rdf:datatype="&xsd;double">0.0464451180635563</hasSmoothness>
+        <hasSignalEntropy rdf:datatype="&xsd;double">2.2883899133412395</hasSignalEntropy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl#m">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#x">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;ParkinsonianSeverityMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyMedium"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessMedium"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisHigh"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;HealthyStatusMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessLow"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyHigh"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;HealthyStatusMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisHigh"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessHigh"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyLow"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessHigh"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyLow"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;ParkinsonianSeverityLow"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;HealthyStatusMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessHigh"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyHigh"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessLow"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyHigh"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisLow"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;ParkinsonianSeverityLow"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;ParkinsonianSeverityMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyMedium"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessLow"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessHigh"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyMedium"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;ParkinsonianSeverityLow"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessLow"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyMedium"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisHigh"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;ParkinsonianSeverityLow"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessLow"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyHigh"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisLow"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;HealthyStatusMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;HealthyStatusMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessMedium"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyMedium"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;ParkinsonianSeverityMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessMedium"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyMedium"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisHigh"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyMedium"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessHigh"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;ParkinsonianSeverityMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;ParkinsonianSeverityLow"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessHigh"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyMedium"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisLow"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyLow"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessHigh"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisHigh"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;ParkinsonianSeverityMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessLow"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyLow"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisHigh"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;ParkinsonianSeverityHigh"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;ParkinsonianSeverityMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyLow"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessMedium"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessHigh"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyLow"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;HealthyStatusLow"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;HealthyStatusLow"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessLow"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyMedium"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessHigh"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyMedium"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;HealthyStatusMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessHigh"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyHigh"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisLow"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;ParkinsonianSeverityLow"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessLow"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyHigh"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisHigh"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;ParkinsonianSeverityMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyMedium"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessLow"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisHigh"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;HealthyStatusLow"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;HealthyStatusHigh"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyMedium"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessHigh"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisLow"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyHigh"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessMedium"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisLow"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;HealthyStatusMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;ParkinsonianSeverityHigh"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyLow"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessMedium"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisHigh"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;ParkinsonianSeverityLow"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessLow"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyHigh"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessMedium"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyHigh"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;ParkinsonianSeverityLow"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessLow"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyLow"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisMedium"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;ParkinsonianSeverityHigh"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;KurtosisLow"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&FWP;hasMeasurement"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#m"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&FWP;SmoothnessHigh"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&FWP;SignalEntropyHigh"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&FWP;HealthyStatusHigh"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
