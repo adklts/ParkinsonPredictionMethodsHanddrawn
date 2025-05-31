@@ -1,0 +1,81 @@
+Individual,InferredClasses
+C_0001_I,Individuals; HealthyStatusMedium; ParkinsoniansSeverityLow
+C_0001_M,Measurement; SegmentLengthLow; AverageSpeedHigh; AveragePressureHigh; AverageSpeedMedium
+C_0002_I,Individuals
+C_0002_M,Measurement; AveragePressureMedium; AveragePressureHigh; AverageSpeedLow
+C_0003_I,Individuals; HealthyStatusHigh
+C_0003_M,Measurement; SegmentLengthHigh; AveragePressureHigh; AverageSpeedLow
+C_0004_I,Individuals
+C_0004_M,Measurement; AveragePressureHigh; AverageSpeedMedium
+C_0005_I,Individuals; HealthyStatusMedium; ParkinsoniansSeverityLow
+C_0005_M,Measurement; SegmentLengthLow; AverageSpeedHigh; AveragePressureHigh
+C_0006_I,Individuals; HealthyStatusMedium
+C_0006_M,Measurement; SegmentLengthLow; AveragePressureHigh; AverageSpeedMedium
+C_0007_I,Individuals; HealthyStatusMedium; ParkinsoniansSeverityLow
+C_0007_M,Measurement; SegmentLengthLow; AverageSpeedHigh; AveragePressureHigh
+C_0008_I,Individuals; HealthyStatusMedium; ParkinsoniansSeverityMedium; ParkinsoniansSeverityHigh
+C_0008_M,Measurement; SegmentLengthHigh; AveragePressureMedium; AveragePressureLow; AverageSpeedLow
+C_0009_I,Individuals; HealthyStatusMedium; ParkinsoniansSeverityHigh
+C_0009_M,Measurement; SegmentLengthHigh; AveragePressureMedium; AverageSpeedLow
+C_0010_I,Individuals; HealthyStatusHigh
+C_0010_M,Measurement; SegmentLengthHigh; AveragePressureHigh; AverageSpeedLow
+C_0011_I,Individuals; HealthyStatusHigh
+C_0011_M,Measurement; SegmentLengthHigh; AveragePressureHigh; AverageSpeedLow
+C_0012_I,Individuals
+C_0012_M,Measurement; AveragePressureHigh; AverageSpeedMedium; AverageSpeedLow
+C_0013_I,Individuals; HealthyStatusHigh; ParkinsoniansSeverityLow
+C_0013_M,Measurement; SegmentLengthLow; AverageSpeedHigh; AveragePressureLow
+C_0014_I,Individuals; HealthyStatusHigh; ParkinsoniansSeverityLow
+C_0014_M,Measurement; SegmentLengthLow; AverageSpeedHigh; AveragePressureLow
+C_0015_I,Individuals; ParkinsoniansSeverityMedium; HealthyStatusLow
+C_0015_M,Measurement; SegmentLengthLow; AveragePressureLow; AverageSpeedMedium
+P_02100001_I,Individuals; HealthyStatusMedium; ParkinsoniansSeverityLow
+P_02100001_M,Measurement; SegmentLengthLow; AverageSpeedHigh; AveragePressureHigh
+P_02100002_I,Individuals; ParkinsoniansSeverityHigh
+P_02100002_M,Measurement; SegmentLengthLow; AveragePressureMedium; AverageSpeedMedium
+P_05060003_I,Individuals; ParkinsoniansSeverityHigh; HealthyStatusHigh; ParkinsoniansSeverityLow
+P_05060003_M,Measurement; SegmentLengthLow; AverageSpeedHigh; AveragePressureMedium; AveragePressureLow
+P_05060004_I,Individuals; HealthyStatusMedium; ParkinsoniansSeverityHigh
+P_05060004_M,Measurement; SegmentLengthHigh; AveragePressureMedium; AverageSpeedLow
+P_09100001_I,Individuals; HealthyStatusMedium; ParkinsoniansSeverityHigh
+P_09100001_M,Measurement; SegmentLengthHigh; AveragePressureMedium; AverageSpeedLow
+P_09100003_I,Individuals; HealthyStatusMedium; ParkinsoniansSeverityHigh
+P_09100003_M,Measurement; SegmentLengthHigh; AveragePressureMedium; AverageSpeedLow
+P_09100005_I,Individuals; HealthyStatusMedium; ParkinsoniansSeverityHigh
+P_09100005_M,Measurement; SegmentLengthHigh; AveragePressureMedium; AverageSpeedLow
+P_11120003_I,Individuals; ParkinsoniansSeverityMedium
+P_11120003_M,Measurement; SegmentLengthHigh; AveragePressureLow; AverageSpeedLow
+P_11120004_I,Individuals
+P_11120004_M,Measurement; AverageSpeedHigh; AveragePressureMedium
+P_11120005_I,Individuals; ParkinsoniansSeverityHigh; HealthyStatusHigh; ParkinsoniansSeverityLow
+P_11120005_M,Measurement; SegmentLengthLow; AverageSpeedHigh; AveragePressureMedium; AveragePressureLow
+P_12060001_I,Individuals; HealthyStatusMedium; ParkinsoniansSeverityHigh; ParkinsoniansSeverityLow
+P_12060001_M,Measurement; SegmentLengthLow; AverageSpeedHigh; AveragePressureMedium; AveragePressureHigh
+P_12060002_I,Individuals; ParkinsoniansSeverityHigh
+P_12060002_M,Measurement; AverageSpeedHigh; SegmentLengthHigh; AveragePressureLow
+P_16100003_I,Individuals; ParkinsoniansSeverityMedium; HealthyStatusLow
+P_16100003_M,Measurement; SegmentLengthLow; AveragePressureLow; AverageSpeedMedium
+P_16100004_I,Individuals; ParkinsoniansSeverityMedium
+P_16100004_M,Measurement; SegmentLengthHigh; AveragePressureLow; AverageSpeedLow
+P_23100002_I,Individuals
+P_23100002_M,Measurement; AveragePressureHigh; AverageSpeedMedium; AverageSpeedLow
+P_23100003_I,Individuals; ParkinsoniansSeverityMedium; HealthyStatusLow
+P_23100003_M,Measurement; SegmentLengthLow; AveragePressureLow; AverageSpeedMedium
+P_26060001_I,Individuals; ParkinsoniansSeverityMedium
+P_26060001_M,Measurement; AverageSpeedHigh; SegmentLengthHigh; AveragePressureMedium
+P_26060002_I,Individuals; HealthyStatusHigh; ParkinsoniansSeverityLow
+P_26060002_M,Measurement; SegmentLengthHigh; AveragePressureHigh; AverageSpeedMedium; AverageSpeedLow
+P_26060003_I,Individuals; ParkinsoniansSeverityMedium; ParkinsoniansSeverityHigh
+P_26060003_M,Measurement; AverageSpeedHigh; SegmentLengthHigh; AveragePressureMedium; AveragePressureLow
+P_26060006_I,Individuals; ParkinsoniansSeverityHigh
+P_26060006_M,Measurement; AverageSpeedHigh; SegmentLengthHigh; AveragePressureLow
+P_26060007_I,Individuals; ParkinsoniansSeverityMedium
+P_26060007_M,Measurement; SegmentLengthHigh; AveragePressureLow; AverageSpeedMedium
+P_27110001_I,Individuals; ParkinsoniansSeverityMedium; HealthyStatusLow
+P_27110001_M,Measurement; SegmentLengthLow; AveragePressureLow; AverageSpeedMedium; AverageSpeedLow
+P_27110003_I,Individuals; HealthyStatusMedium; ParkinsoniansSeverityHigh
+P_27110003_M,Measurement; SegmentLengthHigh; AveragePressureMedium; AverageSpeedLow
+P_30100001_I,Individuals
+P_30100001_M,Measurement; AverageSpeedHigh; AveragePressureMedium; AveragePressureHigh
+P_30100002_I,Individuals; ParkinsoniansSeverityMedium; HealthyStatusLow
+P_30100002_M,Measurement; SegmentLengthLow; AveragePressureLow; AverageSpeedMedium
