@@ -1,0 +1,18 @@
+Rule,Healthy,Parkinsonian,,,
+SegmentLength=High | Speed=Low | AveragePressure=High,3,0,,HealthyStatusHigh,
+SegmentLength=High | Speed=Low | AveragePressure=Medium,2,5,,HealthyStatusMedium,ParkinsonianSeverityHigh
+SegmentLength=Low | Speed=High | AveragePressure=High,2,2,,HealthyStatusMedium,ParkinsonianSeverityLow
+SegmentLength=Low | Speed=High | AveragePressure=Low,2,1,,HealthyStatusHigh,ParkinsonianSeverityLow
+SegmentLength=Medium | Speed=Medium | AveragePressure=High,2,1,,HealthyStatusHigh,ParkinsonianSeverityMedium
+SegmentLength=Low | Speed=Medium | AveragePressure=High,2,0,,HealthyStatusMedium,
+SegmentLength=Low | Speed=Medium | AveragePressure=Low,1,4,,HealthStatusLow,ParkinsonianSeverityMedium
+SegmentLength=Medium | Speed=Low | AveragePressure=Medium,1,0,,HealthyStatusMedium,
+SegmentLength=High | Speed=High | AveragePressure=Low,0,3,,,ParkinsonianSeverityGigh
+SegmentLength=High | Speed=Low | AveragePressure=Low,0,2,,,ParkinsonianSeverityMedium
+SegmentLength=High | Speed=High | AveragePressure=Medium,0,1,,,ParkinsonianSeverityMedium
+SegmentLength=High | Speed=Medium | AveragePressure=High,0,1,,,ParkinsonianSeverityLow
+SegmentLength=High | Speed=Medium | AveragePressure=Low,0,1,,,ParkinsonianSeverityMedium
+SegmentLength=Low | Speed=High | AveragePressure=Medium,0,1,,,ParkinsonianSeverityHigh
+SegmentLength=Low | Speed=Medium | AveragePressure=Medium,0,1,,,ParkinsonianSeverityHigh
+SegmentLength=Medium | Speed=High | AveragePressure=High,0,1,,,ParkinsonianSeverityMedium
+SegmentLength=Medium | Speed=High | AveragePressure=Medium,0,1,,,ParkinsonianSeverityMedium
