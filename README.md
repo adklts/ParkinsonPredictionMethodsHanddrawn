@@ -50,9 +50,9 @@ This repository contains datasets, code, ontology models, and experimental outpu
 
 ## 📊 Datasets
 
-- **Dataset 1:** Waves Images  
-- **Dataset 2:** Spiral Images
-- **Dataset 3:** Spiral Arithmetic data from Spiral Handdrawn  
+- **Dataset 1:** Waves Images, Synthetic dataset File: ctgan_synthetic_1000_per_class.csv
+- **Dataset 2:** Spiral Images, Synthetic dataset File: ctgan_true_positives_all1000.csv
+- **Dataset 3:** Spiral Arithmetic data from Spiral Handdrawn, Synthetic dataset File: healthy_synthetic_data20250511_optimized.csv, parkinsonian_synthetic_data20250511_optimized.csv
 
 
 
