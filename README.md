@@ -79,3 +79,11 @@ Representative visualizations (histograms, boxplots, fuzzy membership plots) are
 - True Positive synthetic subsets are saved in `ctgan_true_positives_*.csv`.  
 
 ---
+
+## License
+This dataset and code are released under the Creative Commons Attribution 4.0 (CC BY 4.0) license.
+
+## Citation
+If you use this dataset, please cite:
+
+Koletis, A. (2026). ParkinsonPredictionMethodsHanddrawn. GitHub repository. https://github.com/adklts/ParkinsonPredictionMethodsHanddrawn
